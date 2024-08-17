@@ -1,0 +1,73 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.character-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+}
+
+.character-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.character-details {
+  padding: 15px;
+}
+
+.character-details h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.character-details p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #666;
+}
+
+.load-more {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.load-more button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.load-more button:hover {
+  background-color: #0056b3;
+}
+
+.load-more button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
